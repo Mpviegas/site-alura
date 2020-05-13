@@ -1,7 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    background-image: url(imagens/background.png);
+    background: #FFF;
     font-family: Arial;
     height: 100vh
+  }
+  @media (min-width: 400px) {
+    body {
+      font-size: 14px;
+    }
+
+  @media (min-width: 600px) {
+      body {
+        font-size: 22px;
+      }
+    }
+  header {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   a {
   color: #696969;
@@ -11,7 +33,15 @@ body {
     text-decoration: underline;
   }
   .menu {
-    background-color: #66CDAA
+    background-color: #66CDAA;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+  .menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
   }
   .menu li {
     list-style: none;
