@@ -19,7 +19,7 @@ body {
       }
     }
   header {
-    height: 80vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +29,8 @@ body {
   color: #ececec;
   text-decoration: none;
   }
-  a:hover {
+  .menu a:hover {
+    color: white;
     text-decoration: underline;
   }
   .menu {
@@ -61,6 +62,22 @@ body {
   .site-subtitle {
     font-size: 20px;
   }
+  .sobre,
+  .contato,
+  .portfolio {
+    padding: 2em;
+    min-height: 100vh;
+  } 
+  @media (min-width: 1200px) {
+  .sobre,
+  .contato,
+  .portfolio {
+   min-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+  } 
+  }
+  .sobre h2,
   .contato h2,
   .portfolio h2{
     font-style: italic;
@@ -80,13 +97,24 @@ body {
   font-size: 45px;
 }
 .contato a {
-  font-size: 3em;
   color: black;
+  font-size: 3em;
+  transition: text-shadow 1s;
 }
+.contato a:active,
 .contato a:hover {
   text-decoration: none;
-  text-shadow: 0px 0px 8px black;
+  text-shadow: 0px 0px 6px black;
 }
 .contato .icons {
   text-align: center;
+}
+.sobre p {
+  margin: 10px;
+  margin-bottom: 1.4em;
+  text-indent: 1.4em;
+  text-align: justify;
+}
+.sobre a {
+  color: rgb(87, 87, 252);
 }
