@@ -84,13 +84,15 @@ body {
     color: #2a2d2d;
     font-size: 1.7em;
   } 
-.img-portfolio-html {
-  width: 270px;
-}
-.img-portfolio-cpp {
-  /*! height: 74; */
-  width: 274px;
-}
+  .sobre .avatar {
+    float: right;
+    margin-left: 2em;
+  }
+  .sobre img {
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+  }
 .port {
   text-align: center;
   padding: 10px;
